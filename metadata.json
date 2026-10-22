@@ -1,0 +1,6 @@
+{
+  "name": "Absensi Siswa PWA - Sistem Kehadiran Sekolah",
+  "description": "Progressive Web App (PWA) modern untuk pencatatan kehadiran siswa cepat, fleksibel, offline-first dengan sinkronisasi otomatis dan laporan lengkap.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

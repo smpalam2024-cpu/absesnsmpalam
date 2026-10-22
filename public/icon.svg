@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Background with safe zone margin -->
+  <rect width="512" height="512" rx="104" fill="url(#grad)" />
+  
+  <!-- Clipboard / Card Base -->
+  <g filter="url(#shadow)">
+    <rect x="116" y="96" width="280" height="330" rx="24" fill="#ffffff" />
+    <!-- Clip -->
+    <path d="M196 82 C196 74 202 68 210 68 L302 68 C310 68 316 74 316 82 L316 104 C316 112 310 118 302 118 L210 118 C202 118 196 112 196 104 Z" fill="#94a3b8"/>
+    <circle cx="256" cy="94" r="10" fill="#ffffff" />
+    
+    <!-- Attendance Rows with Checkmarks -->
+    <!-- Row 1 (Green Hadir) -->
+    <rect x="146" y="150" width="130" height="14" rx="7" fill="#cbd5e1" />
+    <circle cx="340" cy="157" r="16" fill="#10b981" />
+    <path d="M333 157 L338 162 L348 152" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- Row 2 (Green Hadir) -->
+    <rect x="146" y="200" width="150" height="14" rx="7" fill="#cbd5e1" />
+    <circle cx="340" cy="207" r="16" fill="#10b981" />
+    <path d="M333 207 L338 212 L348 202" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Row 3 (Blue Izin) -->
+    <rect x="146" y="250" width="120" height="14" rx="7" fill="#cbd5e1" />
+    <circle cx="340" cy="257" r="16" fill="#3b82f6" />
+    <text x="340" y="263" font-size="16" font-family="Arial, sans-serif" font-weight="bold" fill="#ffffff" text-anchor="middle">i</text>
+
+    <!-- Row 4 (Orange Terlambat) -->
+    <rect x="146" y="300" width="140" height="14" rx="7" fill="#cbd5e1" />
+    <circle cx="340" cy="307" r="16" fill="#f59e0b" />
+    <text x="340" y="313" font-size="16" font-family="Arial, sans-serif" font-weight="bold" fill="#ffffff" text-anchor="middle">T</text>
+
+    <!-- Bottom summary pill -->
+    <rect x="146" y="356" width="220" height="34" rx="17" fill="#eff6ff" stroke="#bfdbfe" stroke-width="2" />
+    <text x="256" y="378" font-size="14" font-family="Arial, sans-serif" font-weight="bold" fill="#1d4ed8" text-anchor="middle">ABSENSI SISWA</text>
+  </g>
+</svg>
