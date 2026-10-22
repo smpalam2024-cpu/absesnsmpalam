@@ -38,17 +38,24 @@ export const PWAInstallButton: React.FC<PWAInstallButtonProps> = ({ variant = 'n
   if (variant === 'banner') {
     return (
       <>
-        <div className="bg-gradient-to-r from-blue-700 via-indigo-700 to-blue-800 text-white p-3 sm:p-4 rounded-xl shadow-md mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-          <div className="flex items-center gap-3">
-            <div className="p-2.5 bg-white/15 rounded-lg shrink-0">
-              <Smartphone className="w-5 h-5 text-white" />
+        <div className="bg-gradient-to-r from-blue-700 via-indigo-700 to-blue-800 text-white p-3.5 sm:p-4 rounded-2xl shadow-md mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3.5">
+          <div className="flex items-center gap-3.5">
+            <div className="w-13 h-13 rounded-2xl bg-white p-1 shadow-md shrink-0 flex items-center justify-center">
+              <img
+                src="/assets/aistudio/1713909500616_5b14171f.png"
+                alt="Logo PWA SMP Alam Excellentia"
+                className="w-full h-full object-contain"
+              />
             </div>
             <div>
-              <h3 className="font-semibold text-sm sm:text-base leading-tight">
-                Pasang Aplikasi Absensi di Perangkat Anda (PWA)
+              <div className="text-[10px] font-bold text-amber-300 uppercase tracking-wider">
+                Progressive Web App (PWA)
+              </div>
+              <h3 className="font-bold text-sm sm:text-base leading-tight mt-0.5">
+                Pasang Absensi SMP Alam Excellentia di HP / Laptop
               </h3>
-              <p className="text-xs sm:text-sm text-blue-100 mt-0.5">
-                Buka lebih cepat, bisa digunakan saat offline, tanpa perlu instalasi dari App Store/Play Store.
+              <p className="text-xs text-blue-100 mt-0.5">
+                Akses cepat dari layar utama perangkat, bisa dipakai saat offline tanpa download dari Play Store.
               </p>
             </div>
           </div>
@@ -101,16 +108,20 @@ const IOSInstallModal: React.FC<IOSInstallModalProps> = ({ onClose }) => {
           <X className="w-5 h-5" />
         </button>
 
-        <div className="flex items-center gap-3 mb-4">
-          <div className="p-3 bg-blue-100 text-blue-600 rounded-xl">
-            <Smartphone className="w-6 h-6" />
+        <div className="flex items-center gap-3.5 mb-4">
+          <div className="w-14 h-14 rounded-2xl bg-slate-50 p-1 border border-slate-200 shrink-0 flex items-center justify-center shadow-xs">
+            <img
+              src="/assets/aistudio/1713909500616_5b14171f.png"
+              alt="Logo SMP Alam Excellentia"
+              className="w-full h-full object-contain"
+            />
           </div>
           <div>
-            <h3 className="text-base font-bold text-slate-900">
-              Pasang Aplikasi di Layar Utama (PWA)
+            <h3 className="text-base font-bold text-slate-900 leading-tight">
+              Pasang ke Layar Utama
             </h3>
-            <p className="text-xs text-slate-500">
-              Akses cepat seperti aplikasi bawaan di HP & Tablet Anda
+            <p className="text-xs text-slate-500 mt-0.5">
+              SMP Alam Excellentia Pamekasan (PWA)
             </p>
           </div>
         </div>
